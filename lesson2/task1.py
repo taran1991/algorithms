@@ -14,7 +14,10 @@ while oper != '0':
     elif oper == '-':
         print(op1 - op2)
     elif oper == '/':
-        print(op1 / op2)
+        if op2 != 0:
+            print(op1 / op2)
+        else:
+            print('На ноль делить нельзя')
     else:
         print(op1 * op2)
     oper = input('Введите операцию. +,-,/,*,0-для выхода ')
