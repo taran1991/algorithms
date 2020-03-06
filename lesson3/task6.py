@@ -6,7 +6,6 @@ SIZE = 10
 MIN_ITEM = 0
 MAX_ITEM = 10
 arr = [random.randint(MIN_ITEM, MAX_ITEM) for _ in range(SIZE)]
-print(arr)
 
 if not arr:
     print('Введен пустой список')

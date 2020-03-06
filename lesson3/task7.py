@@ -6,7 +6,6 @@ SIZE = 7
 MIN_ITEM = 0
 MAX_ITEM = 10
 arr = [random.randint(MIN_ITEM, MAX_ITEM) for _ in range(SIZE)]
-print(arr)
 
 if len(arr) < 2:
     print('Введите массив состоящий как минимум из дух элементов')

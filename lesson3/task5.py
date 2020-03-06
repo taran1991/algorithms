@@ -6,7 +6,6 @@ SIZE = 10
 MIN_ITEM = -5
 MAX_ITEM = 5
 arr = [random.randint(MIN_ITEM, MAX_ITEM) for _ in range(SIZE)]
-print(arr)
 
 max_negative_elem = None
 max_negative_ind = None
