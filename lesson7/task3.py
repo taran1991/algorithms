@@ -15,7 +15,7 @@ def test_func(func):
     for _ in range(100):
         m = random.randint(1, 100)
         arr = [random.randint(0, 10) for _ in range(2 * m + 1)]
-        median = find_median(arr)
+        median = func(arr)
         true_median = sorted(arr)[m]
         assert median == true_median, f'Алгоритм не верен {median} != {true_median}, {arr}'
     print('Функция работает')
@@ -36,7 +36,7 @@ def find_median(arr):
             return el1
 
 
-# test_func(find_median)
+test_func(find_median)
 m = int(input('Введите натуральное число '))
 arr = [random.randint(0, 10) for _ in range(2 * m + 1)]
 print(arr)
